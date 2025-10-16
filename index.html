@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Gabriel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="calculadora">
+    <div>
+      <input type="text" id="tela" disabled>
+      <p class="operacao"></p>
+    </div>
+    <div class="container">
+    <div class="botoes">
+      <!-- Linha 1 -->
+      <button class="button-clean" onclick="limparTudo()">Ac</button>
+      <button class="button-clean" onclick="backspace()">⌫</button>
+      <button class="botaoDiv" data-op="/">/</button>
+      <button class="botaoMult" data-op="*">X</button>
+    </div>
+
+    <div class="botoes">
+      <!-- Linha 2 -->
+      <button class="num" data-num="7">7</button>
+      <button class="num" data-num="8">8</button>
+      <button class="num" data-num="9">9</button>
+      <button class="botaoMenos" data-op="-">-</button>
+    </div>
+
+    <div class="botoes">
+      <!-- Linha 3 -->
+      <button class="num" data-num="4">4</button>
+      <button class="num" data-num="5">5</button>
+      <button class="num" data-num="6">6</button>
+      <button class="botaoAdicao" data-op="+">+</button>
+    </div>
+
+    <div class="botoes">
+      <!-- Linha 4 -->
+      <button class="num" data-num="1">1</button>
+      <button class="num" data-num="2">2</button>
+      <button class="num" data-num="3">3</button>
+    </div>
+
+    <div class="botoes">
+      <!-- Linha 5 -->
+      <button class="botao0" data-num="0">0</button>
+      <button class="botaoPonto" data-num=".">.</button>
+      <button class="botaoIgual" data-op="=">=</button>
+    </div>
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
