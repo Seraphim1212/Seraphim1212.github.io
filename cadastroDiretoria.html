@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleCadastroD.css">
+    <link rel="stylesheet" href="./cadastroD.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="tudo">
+
+        <div id="box-principal">
+
+            <div id="box-direita">
+
+                <div id="header-box-direita">
+
+                    <div id="botao-titulo">
+                        <button id="botao-voltar" type="button" style="margin: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z">
+                                </path>
+                            </svg></button>
+
+                        <h1 class="fonte" style="font-weight: 300; font-size: 25px; margin: 15px;">TonJunFort</h1>
+                    </div>
+
+                    <h1 style="justify-self: center;" class="fonte bold">
+                        Cadastro Diretoria
+                    </h1>
+
+                </div>
+
+
+
+                <form id="cadastro">
+
+                    <div id="box-inputs">
+
+
+                        <div id="campo-1" class="campos-inputs">
+                            <label for="nome" class="fonte">Nome Completo</label>
+                            <input class="fonte inputs align-self-inputs" type="text" name="nome" id="nome" required>
+                        </div>
+
+                        <div id="campo-2" class="campos-inputs">
+                            <label for="username" class="fonte">Nome de Usuário</label>
+                            <input class="fonte inputs align-self-inputs" type="text" name="usuario" id="username"
+                                maxlength="25" required>
+                        </div>
+
+                        <div id="campo-3" class="campos-inputs">
+                            <label for="email" class="fonte">Email Pessoal</label>
+                            <input class="fonte inputs align-self-inputs" type="email" name="email" id="email" required>
+                        </div>
+
+                        <div id="campo-4" class="campos-inputs">
+                            <label for="password" class="fonte"> Senha</label>
+                            <input class="fonte inputs align-self-inputs" type="password" name="senha" id="password"
+                                minlength="8" required>
+                        </div>
+
+                    </div>
+
+                    <div id="box-botoes">
+
+                        <button class="fonte" id="botao-login" type="submit">
+                            <h3>
+                                Cadastrar
+                            </h3>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="custom-modal">
+        <div id="model-body">
+            <p id="modal-text" class="fonte-josefin"></p>
+            <button id="modal-button" onclick="closeModal()" class="fonte bold">
+                Entendido
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

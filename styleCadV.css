@@ -1,0 +1,228 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    size: 100vh;
+}
+
+#tudo {
+    background-color: rgb(244, 245, 247);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, -0.7)),
+        url(../../../midia/Imagens/cloud14.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+#conteudo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    height: 100%
+}
+
+#img-tonjut-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 17%;
+}
+
+
+#box-direita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    width: 30%;
+    height: 70%;
+
+    margin: 30px 0px 0px 0px;
+    gap: 30px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px)
+}
+
+
+#box-boasvindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+    width: 85%;
+}
+
+#box-mensagem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    height: 10%;
+}
+
+#box-escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 95%;
+    height: 45%;
+}
+
+#box-diretor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.texto {
+    margin: 0;
+
+    color: #3f3b3b;
+}
+
+#box-escolha-h4 {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.fonte {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fonte-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#box-botoes {
+    display: flex;
+    justify-content: center;
+
+    height: 12%;
+    width: 87%;
+
+    margin-top: 10px;
+
+    color: #054caa;
+}
+
+#botao-voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10%;
+    height: 35px;
+
+    border-radius: 30px;
+    border: 2px solid #c7c9cc;
+
+    cursor: pointer;
+    position: relative;
+}
+
+#botao-voltar:hover{
+    transition: 0.7s;
+
+    background-color: #adaeaf;
+}
+
+#botao-voltar::before {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    border: 2px solid #575e69;
+    border-radius: 30px;
+
+    transition: clip-path 0.5s ease-in-out;
+
+
+    clip-path: inset(0 100% 100% 0);
+}
+
+#botao-voltar:hover::before {
+    clip-path: inset(0 0 0 0);
+}
+
+#botao-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 89%;
+    height: 100%;
+
+    border-radius: 30px;
+    border: 2px solid rgba(89, 172, 228, 0.2);
+
+    background-color: #5095f0;
+
+    cursor: pointer;
+    position: relative;
+}
+
+#botao-login::before {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    border: 2px solid #0f61db;
+    border-radius: 30px;
+
+    transition: clip-path 0.5s ease-in-out;
+
+
+    clip-path: inset(0 100% 100% 0);
+}
+
+#botao-login:hover::before {
+    clip-path: inset(0 0 0 0);
+}

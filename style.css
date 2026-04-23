@@ -1,0 +1,235 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    size: 100vh;
+}
+
+#tudo {
+    background-color: rgb(244, 245, 247);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, -0.7)),
+        url(./midia/Imagens/cloud14.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 5%;
+
+    background-color: #74a1ed;
+
+    box-shadow: 0px 0px 9px 0px rgba(119, 186, 241, 0.6);
+}
+
+#conteudo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    height: 100%
+}
+
+#img-tonjut-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 17%;
+}
+
+
+#box-direita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+
+    width: 25%;
+    height: 58%;
+
+    margin: 15px 0px 0px 0px;
+    gap: 100px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
+#box-boasvindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+    width: 85%;
+}
+
+#box-textos {
+    display: flex;
+    justify-content: space-between;
+
+    width: 85%;
+    height: 2%;
+
+    margin-top: 8px;
+}
+
+#box-mensagem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    height: 15%;
+
+    margin-top: 25px;
+}
+
+#box-escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 95%;
+    height: 45%;
+}
+
+#box-diretor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.escolhas {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+    width: 77%;
+    height: 17%;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 9px 0px rgb(0, 0, 0, 0.25);
+    background: linear-gradient(93deg, rgb(248 248 248) -0.02%, rgb(255 255 255) 99.14%), rgb(255 255 255);
+    backdrop-filter: blur(2px);
+}
+
+.texto {
+    margin: 0;
+
+    color: #3f3b3b;
+}
+
+#box-escolha-h4 {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.botao-escolhas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15%;
+    height: 100%;
+
+    border-radius: 30px;
+    border: 2px solid rgba(89, 172, 228, 0.2);
+
+    background-color: #5095f0;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.botao-escolhas::before {
+    content: "";
+    position: absolute;
+
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+
+    border: 2px solid #0f61db;
+    border-radius: 30px;
+
+    transition: clip-path 0.5s ease-in-out;
+
+
+    clip-path: inset(0 100% 100% 0);
+}
+
+.botao-escolhas:hover::before {
+
+    clip-path: inset(0 0 0 0);
+}
+
+
+.img-botao {
+    width: 45%;
+}
+
+.fonte {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fonte-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#box-tojunt {
+    width: 55%;
+    height: 15%;
+
+    margin-top: 56px;
+}
+
+#box-registro{
+    border: 2px solid black;
+    border-radius: 10px;
+
+    height: 10%;
+    width: 70%;
+}

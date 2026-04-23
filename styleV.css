@@ -1,0 +1,145 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+    size: 100vh;
+}
+
+#tudo {
+    background-color: rgb(244, 245, 247);
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, -0.7)),
+        url(../../midia/Imagens/cloud14.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 5%;
+
+    background-color: #5095f0;
+
+    box-shadow: 0px 0px 9px 0px rgba(119, 186, 241, 0.6);
+}
+
+#conteudo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    height: 100%
+}
+
+#img-tonjut-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 17%;
+}
+
+
+#box-direita {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+
+    width: 30%;
+    height: 65%;
+
+    margin: 15px 0px 0px 0px;
+    gap: 80px;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
+#box-boasvindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+    width: 85%;
+}
+
+#box-mensagem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 90%;
+    height: 10%;
+}
+
+#box-escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 30px;
+    width: 95%;
+    height: 45%;
+}
+
+#box-diretor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.texto {
+    margin: 0;
+
+    color: #3f3b3b;
+}
+
+#box-escolha-h4 {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.fonte {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.fonte-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}

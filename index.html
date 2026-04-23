@@ -1,58 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Gabriel</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-  <div class="calculadora">
-    <div>
-      <input type="text" id="tela" disabled>
-      <p class="operacao"></p>
-    </div>
-    <div class="container">
-    <div class="botoes">
-      <!-- Linha 1 -->
-      <button class="button-clean" onclick="limparTudo()">Ac</button>
-      <button class="button-clean" onclick="backspace()">⌫</button>
-      <button class="botaoDiv" data-op="/">/</button>
-      <button class="botaoMult" data-op="*">X</button>
+
+    <div id="tudo">
+
+        <div id="box-principal">
+
+            <header id="cabecalho">
+
+                <div id="conteudo-cabecalho">
+
+                    <div id="img-tonjut-cabecalho">
+                        <img src="./midia/GIFs/hau.gif" alt="hai.gif">
+                        <h3 style="font-size: 25px;" class="fonte-josefin bold">TONJUNFORT</h3>
+                    </div>
+
+                    <a style="text-decoration: none;" class="fonte bold" href="#">Sobre Nós</a>
+                </div>
+
+            </header>
+
+            <div id="box-direita">
+
+                <div id="box-mensagem">
+
+                    <h1 style="margin: 0; color: #3f3b3b" class="fonte">
+                        Olá! Seja bem vindo
+                    </h1>
+
+                    <h4 style="margin: 0; font-size: 25px; color: #3f3b3b" class="fonte">
+                        :D
+                    </h4>
+
+                </div>
+
+                <div id="box-escolha">
+
+                    <h4 id="box-escolha-h4" class="fonte" style="color: #3f3b3b;">
+                        Escolha abaixo um perfil para acessar
+                    </h4>
+
+                    <div class="escolhas" id="box-diretor">
+
+                        <div id="texto-escolha-diretor">
+
+                            <p class="texto fonte" style="font-size: 20px;">
+                                Sou
+                            </p>
+
+                            <p class="texto fonte" style="font-size: 30px; font-weight: bold;">
+                                Diretoria
+                            </p>
+
+
+                        </div>
+
+                        <button id="botao-pag-diretoria" class="botao-escolhas">
+                            <img class="img-botao"
+                                src="./Midia/Imagens/pngtree-arrow-right-flat-white-color-icon-ok-down-negative-vector-png-image_9756321-removebg-preview.png"
+                                alt="falhou.svg">
+                        </button>
+
+                    </div>
+
+
+                    <div class="escolhas" id="box-voluntário">
+
+
+                        <div id="texto-escolha-voluntario">
+
+                            <p class="texto fonte" style="font-size: 20px;">
+                                Sou
+                            </p>
+
+                            <p class="texto fonte" style="font-size: 30px; font-weight: bold;">
+                                Voluntário
+                            </p>
+
+
+                        </div>
+
+
+
+                        <button id="botao-pag-voluntario" class="botao-escolhas">
+                            <img class="img-botao"
+                                src="./Midia/Imagens/pngtree-arrow-right-flat-white-color-icon-ok-down-negative-vector-png-image_9756321-removebg-preview.png"
+                                alt="falhou.jpg">
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="botoes">
-      <!-- Linha 2 -->
-      <button class="num" data-num="7">7</button>
-      <button class="num" data-num="8">8</button>
-      <button class="num" data-num="9">9</button>
-      <button class="botaoMenos" data-op="-">-</button>
-    </div>
-
-    <div class="botoes">
-      <!-- Linha 3 -->
-      <button class="num" data-num="4">4</button>
-      <button class="num" data-num="5">5</button>
-      <button class="num" data-num="6">6</button>
-      <button class="botaoAdicao" data-op="+">+</button>
-    </div>
-
-    <div class="botoes">
-      <!-- Linha 4 -->
-      <button class="num" data-num="1">1</button>
-      <button class="num" data-num="2">2</button>
-      <button class="num" data-num="3">3</button>
-    </div>
-
-    <div class="botoes">
-      <!-- Linha 5 -->
-      <button class="botao0" data-num="0">0</button>
-      <button class="botaoPonto" data-num=".">.</button>
-      <button class="botaoIgual" data-op="=">=</button>
-    </div>
-  </div>
-</div>
-
-  <script src="js/script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
