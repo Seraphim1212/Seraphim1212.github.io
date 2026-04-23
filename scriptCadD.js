@@ -1,5 +1,5 @@
-// Cadastro de voluntário — envia os dados para o backend Node.js
-// em POST {API_BASE_URL}/cadastro/voluntario.
+// Cadastro de diretoria — envia os dados para o backend Node.js
+// em POST {API_BASE_URL}/cadastro/diretoria.
 
 const botaoVoltar = document.getElementById('botao-voltar');
 if (botaoVoltar) {
@@ -27,14 +27,12 @@ document.getElementById('cadastro').addEventListener('submit', async function (e
     const email = document.getElementById('email').value;
     const senha = document.getElementById('password').value;
 
-    const idadeEl = document.getElementById('idade');
     const cpfEl = document.getElementById('cpf');
-    const enderecoEl = document.getElementById('endereco');
+    const cargoEl = document.getElementById('cargo');
     const telefoneEl = document.getElementById('telefone');
 
-    const idade = idadeEl && idadeEl.value ? Number(idadeEl.value) : null;
     const cpf = cpfEl ? cpfEl.value || null : null;
-    const endereco = enderecoEl ? enderecoEl.value || null : null;
+    const cargo = cargoEl ? cargoEl.value || null : null;
     const telefone = telefoneEl ? telefoneEl.value || null : null;
 
     if (senha.length < 8) {
@@ -43,7 +41,7 @@ document.getElementById('cadastro').addEventListener('submit', async function (e
     }
 
     try {
-        const resp = await fetch(`${window.API_BASE_URL}/cadastro/voluntario`, {
+        const resp = await fetch(`${window.API_BASE_URL}/cadastro/diretoria`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -51,9 +49,8 @@ document.getElementById('cadastro').addEventListener('submit', async function (e
                 usuario,
                 email,
                 senha,
-                idade,
                 cpf,
-                endereco,
+                cargo,
                 telefone,
             }),
         });
@@ -65,7 +62,7 @@ document.getElementById('cadastro').addEventListener('submit', async function (e
             return;
         }
 
-        showModal('Cadastro de voluntário realizado com sucesso!');
+        showModal('Cadastro de diretoria realizado com sucesso!');
     } catch (err) {
         console.error(err);
         showModal(
